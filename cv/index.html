@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern CV Template</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #7aa6ff;
+    }
+
+    .cv-container {
+        width: 70%;
+        margin: 40px auto;
+        background: white;
+        display: flex;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 0 25px rgba(0,0,0,0.2);
+    }
+
+    /* LEFT SIDEBAR */
+    .left {
+        width: 30%;
+        background: #1e3d59;
+        color: white;
+        padding: 30px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: #ddd;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        font-size: 18px;
+        margin-top: 25px;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .left p, .left li {
+        font-size: 14px;
+        margin: 8px 0;
+    }
+
+    /* RIGHT SIDE */
+    .right {
+        width: 70%;
+        padding: 40px;
+    }
+
+    .right h1 {
+        margin: 0;
+        font-size: 35px;
+        color: #1e3d59;
+    }
+
+    .info-block {
+        margin-top: 20px;
+    }
+
+    .info-block h3 {
+        color: #1e3d59;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    input, select {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+
+    .submit-btn {
+        background: #1e3d59;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .submit-btn:hover {
+        background: #163043;
+    }
+</style>
+</head>
+<body>
+
+<div class="cv-container">
+    
+    <!-- LEFT SIDEBAR -->
+    <div class="left">
+
+        <div class="profile-pic"></div>
+
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> example@mail.com</p>
+        <p><strong>Phone:</strong> +123-456-7890</p>
+
+        <h2 class="section-title">Skills</h2>
+        <ul>
+            <li>Communication</li>
+            <li>Teamwork</li>
+            <li>Problem Solving</li>
+            <li>Computer Skills</li>
+        </ul>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="right">
+        
+        <h1>Your Name Here</h1>
+        <p style="color:#555; font-size:16px;">Professional Summary: Write a short introduction about yourself.</p>
+
+        <div class="info-block">
+            <h3>Personal Information</h3>
+
+            <label>Full Name:</label>
+            <input type="text" placeholder="Enter your full name" required>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Phone Number:</label>
+            <input type="num" placeholder="Enter your phone number" required>
+
+            <label>Qualification (Minimum +2):</label>
+            <select>
+                <option>+2 / Intermediate</option>
+                <option>Diploma</option>
+                <option>Bachelor's</option>
+                <option>Master's</option>
+                <option>PhD</option>
+            </select>
+
+            <select>
+                <option value="">Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+
+            <label>Languages Known:</label>
+            <select>
+                <option value="">Select Language</option>
+                <option>Hindi</option>
+                <option>English</option>
+                <option>Nepali</option>
+                <option>Spanish</option>
+                <option>French</option>
+                <option>Other</option>
+            </select>
+
+        </div>
+
+        <div class="info-block">
+            <h3>Experience</h3>
+            <p>• Add your work experience here</p>
+            <p>• Add more bullet points as needed</p>
+        </div>
+
+        <div class="info-block">
+            <h3>Education</h3>
+            <p>• Add your +2 / Intermediate or higher education details here</p>
+        </div>
+
+        <button class="submit-btn">Save CV</button>
+    </div>
+
+</div>
+
+</body>
+</html>
